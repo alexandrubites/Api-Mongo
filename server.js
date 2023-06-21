@@ -7,7 +7,7 @@ const app = express();
 const port = 8080;
 app.use(cors());
 // Conexión a la base de datos MongoDB Atlas
-mongoose.connect('mongodb+srv://alexandrubites:IUMD6wqtYGbVh0yw@cluster0.z4xurdo.mongodb.net',{
+mongoose.connect('mongodb+srv://alexandrubites:IUMD6wqtYGbVh0yw@cluster0.z4xurdo.mongodb.net/?retryWrites=true&w=majority',{
   useNewUrlParser: true,
   useUnifiedTopology: true,
   dbName: 'bdnosql' // Reemplaza con el nombre real de tu base de datos

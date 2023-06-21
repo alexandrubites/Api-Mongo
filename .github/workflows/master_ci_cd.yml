@@ -24,8 +24,6 @@ jobs:
         run: |
           cat .env 
           
-      - name: Build the custom Docker image
-        run: docker build -t ${{secrets.DOCKER_USER}}/${{secrets.MODEL_NAME}}:${{github.sha}} .
 
       - name: show docker images
         run: docker images
